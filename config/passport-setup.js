@@ -1,5 +1,7 @@
 const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
+//const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+
 const keys = require('./keys');
 
 passport.use(
@@ -8,8 +10,7 @@ passport.use(
       // options for google strategy
       clientID: keys.google.clientID,
       clientSecret: keys.google.clientSecret,
-      callbackURL: 'http://www.kayli.xyz:3000/auth/google/redirect',
-      scope: 'profile'
+      callbackURL: 'http://www.kayli.xyz:3000/auth/google/redirect'
     },
     (accessToken, refreshToken, profile, done) => {
       // passport callback function
