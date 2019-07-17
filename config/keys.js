@@ -7,4 +7,3 @@ module.exports = {
     clientSecret: 'hJuc1GYxXeOwPv5YCZxICb9F'
   }
 };
-f;
