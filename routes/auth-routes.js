@@ -23,27 +23,9 @@ router.get(
 // callback route for google to redirect to
 // hand control to passport to use code to grab profile info
 
-// router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-//   res.send('you reached the redirect URI');
-// });
-
-router.get(
-  '/google/redirect',
-  passport.authenticate('google'),
-  (err, req, res, next) => {
-    // custom error handler to catch any errors, such as TokenError
-    if (err.name === 'TokenError') {
-      res.redirect('/auth/google'); // redirect them back to the login page
-    } else {
-      // Handle other errors here
-    }
-  },
-  (req, res) => {
-    // On success, redirect back to '/'
-    // res.redirect('/');
-    res.send('you reached the redirect URI');
-  }
-);
+router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
+  res.send('you reached the redirect URI');
+});
 
 router.get('/test', (req, res) => {
   // handle with passport
