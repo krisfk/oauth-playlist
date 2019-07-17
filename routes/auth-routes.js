@@ -25,7 +25,7 @@ router.get(
 
 router.get(
   '/google/redirect',
-  // passport.authenticate('google', { failureRedirect: '/' }),
+  passport.authenticate('google', { scope: ['profile'] }),
   (req, res) => {
     res.send('you reached the redirect URI');
   }
