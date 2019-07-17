@@ -27,7 +27,7 @@ router.get(
 //   res.send('you reached the redirect URI');
 // });
 
-app.get(
+router.get(
   '/google/redirect',
   passport.authenticate('google', { failureRedirect: '/login' }),
   function(req, res) {
