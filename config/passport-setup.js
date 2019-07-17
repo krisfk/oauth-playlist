@@ -13,7 +13,7 @@ passport.use(
     (accessToken, refreshToken, profile, done) => {
       // passport callback function
       console.log('passport callback function fired:');
-      //      console.log(profile);
+      console.log(profile);
     }
   )
 );
