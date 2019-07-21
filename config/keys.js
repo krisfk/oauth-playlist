@@ -8,7 +8,7 @@ module.exports = {
   },
   mongodb: {
     dbURI:
-      'mongodb+srv://kay123:kay123@cluster0-fisrb.mongodb.net/test?retryWrites=true&w=majority'
+      'mongodb://kay123:kay123@cluster0-fisrb.mongodb.net/test?retryWrites=true&w=majority'
   },
   session: {
     cookieKey: 'thenetninjaisawesomeiguess'
