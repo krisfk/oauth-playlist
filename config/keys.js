@@ -1,14 +1,16 @@
 // add this file to .gitignore
 
 module.exports = {
-        google: {
-            clientID: '616581710231-3gh4r5mnbeadi0r9h1gbvk844kbir61o.apps.googleusercontent.com',
-            clientSecret: 'y3kKg0rZlk3WhE5u-A5aHwsD'
-        },
-        mongodb: {
-            dbURI: 'mongodb://iamshaunjp:test@ds151024.mlab.com:51024/oauth-test'
-        },
-        session: {
-            cookieKey: 'thenetninjaisawesomeiguess'
-        }
+  google: {
+    clientID:
+      '803427079907-511ugvldrdqamolcf670rg4cems8hr6b.apps.googleusercontent.com',
+    clientSecret: 'o4w2rHSsDtov8MmCFe1-ZPz4'
+  },
+  mongodb: {
+    dbURI:
+      'mongodb+srv://kay123:kay123@cluster0-fisrb.mongodb.net/test?retryWrites=true&w=majority'
+  },
+  session: {
+    cookieKey: 'thenetninjaisawesomeiguess'
+  }
 };
