@@ -29,7 +29,7 @@ app.use(passport.session());
 
 mongoose.connect(
   keys.mongodb.dbURI,
-  { useMongoClient: true }
+  { useNewUrlParser: true }
   //     () => {
   //     console.log('connected to mongodb');
   // }
